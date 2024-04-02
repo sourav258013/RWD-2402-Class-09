@@ -1,0 +1,89 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+/* common css end */
+
+/* nav start */
+
+ nav{
+    background-color: #02918c;
+    height: 61px;
+ }
+
+ nav .container{
+    width: 1170px;
+    margin: auto;
+ }
+
+ nav .container .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 61px;
+ }
+
+ nav ul li{
+    display: inline-block;
+  
+ }
+
+ nav ul li a{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    padding: 20px 25px;
+    /* background-color: rgba(0, 0, 0, 0.463); */
+ }
+
+ nav ul li a:hover{
+    color: #cfc91d;
+ }
+
+ /*shudo element ::before usuing start */
+   
+    nav ul li a{
+        position:relative;
+    }
+
+    nav ul li a::before{
+      position: absolute;
+        content: "";
+        width:0;
+        left:0 ;
+        bottom:0;
+        height: 4px;
+        background-color:#Ffffff;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover::before{
+      width: 100%;
+    }
+  /* /*shudo element ::before usuing end */
+
+
+  /* banner section start */
+
+     .banner img{
+      width: 100%;
+       height: 728px;
+       background-repeat: no-repeat;
+       object-fit: cover;
+     }
+      
+  /* banner section end */
+
